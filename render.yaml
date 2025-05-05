@@ -1,0 +1,10 @@
+
+services:
+  - type: web
+    name: engine-sound-api
+    env: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: PORT
+        value: 10000
