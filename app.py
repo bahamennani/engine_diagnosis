@@ -46,5 +46,9 @@ def predict_audio():
 
     return jsonify({"prediction": result})
 
+@app.route('/')
+def home():
+    return "Engine Diagnosis API is running. Use /predict to classify engine audio."
+
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=10000)
